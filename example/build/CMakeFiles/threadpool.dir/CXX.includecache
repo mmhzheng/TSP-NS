@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/ThreadPool.h
+/home/tian/hzheng/TSP-NS/lib/ThreadPool/ThreadPool.h
 vector
 -
 queue
@@ -26,7 +26,7 @@ functional
 stdexcept
 -
 
-/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/example.cpp
+/home/tian/hzheng/TSP-NS/lib/ThreadPool/example.cpp
 iostream
 -
 vector
@@ -34,5 +34,5 @@ vector
 chrono
 -
 ThreadPool.h
-/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/ThreadPool.h
+/home/tian/hzheng/TSP-NS/lib/ThreadPool/ThreadPool.h
 
