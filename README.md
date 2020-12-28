@@ -4,22 +4,27 @@ This is a parallized discrete event simulator for network test. The implemented 
 
 ## Structure
 <TSP-NS>
-├── core-parallel    ## This is the parallel-core
-├── example          ## How to use it is shown here
-├── lib
-└── network          ## Very simple network implementation using parallel-core
+├── core-parallel     ## This is the parallel-core  
+├── network           ## Very simple network implementation using parallel-core  
+├── lib 
+└── example           ## How to use it is shown here  
+ 
+
+## Dependences
+1. git
+2. cmake
+3. pthread library
 
 ## Usage
 Firstly, you need to clone the respority and init the submodules used in this project.
 ``` bash
-git clone 
-git submodule update --init --recursive
+git clone https://github.com/mmhzheng/TSP-NS.git
 ```
 Then you need to setup the dependences.
 ```bash
-bash setup.sh
+sudo ./setup.sh
 ```
-Now you can take a look at example/simple_topo.cpp and run it!
+Now you can take a look at example/simple_topo.cpp and run it! You can check log file to see the running process.
 ```bash
 cd example
 ./auto_build.sh
