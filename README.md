@@ -3,11 +3,13 @@
 This is a parallized discrete event simulator for network test. The implemented functions are very limited till now. But the core functions are all ready.
 
 ## Structure
+``` txt
 <TSP-NS>
 ├── core-parallel     ## This is the parallel-core  
 ├── network           ## Very simple network implementation using parallel-core  
-├── lib 
+├── lib               ## dependences
 └── example           ## How to use it is shown here  
+```
  
 
 ## Dependences
