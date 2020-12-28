@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/ThreadPool.h
+vector
+-
+queue
+-
+memory
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+future
+-
+functional
+-
+stdexcept
+-
+
+/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/example.cpp
+iostream
+-
+vector
+-
+chrono
+-
+ThreadPool.h
+/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/ThreadPool.h
+

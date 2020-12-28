@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -Wall -g2 -ggdb  -rdynamic CMakeFiles/example.dir/simple_topo.cpp.o  -o ../example -Wl,-rpath,/usr/local/lib libnetwrok.a libnscore.a -lpthread /usr/local/lib/libg3logger.so.1.3.2-122 libthreadpool.a libskiplist.a -lpthread 

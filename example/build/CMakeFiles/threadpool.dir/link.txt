@@ -1,0 +1,2 @@
+/usr/bin/ar qc libthreadpool.a  CMakeFiles/threadpool.dir/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/example.cpp.o
+/usr/bin/ranlib libthreadpool.a
