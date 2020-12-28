@@ -6,5 +6,5 @@ CXX_FLAGS =  -O2 -Wall -g2 -ggdb   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hzheng/workSpace/SketchLab/lib/TSP-NS/example/../network/include -I/home/hzheng/workSpace/SketchLab/lib/TSP-NS/example -I/home/hzheng/workSpace/SketchLab/lib/TSP-NS/example/../lib/skiplist/include -I/home/hzheng/workSpace/SketchLab/lib/TSP-NS/example/../lib/ThreadPool -I/home/hzheng/workSpace/SketchLab/lib/TSP-NS/example/../core-parallel/include -isystem /usr/local/include 
+CXX_INCLUDES = -I/home/tian/hzheng/TSP-NS/example/../network/include -I/home/tian/hzheng/TSP-NS/example -I/home/tian/hzheng/TSP-NS/example/../lib/skiplist/include -I/home/tian/hzheng/TSP-NS/example/../lib/ThreadPool -I/home/tian/hzheng/TSP-NS/example/../core-parallel/include -isystem /usr/local/include 
 

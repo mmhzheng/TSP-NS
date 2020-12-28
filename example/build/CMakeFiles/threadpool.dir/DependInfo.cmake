@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/example.cpp" "/home/hzheng/workSpace/SketchLab/lib/TSP-NS/example/build/CMakeFiles/threadpool.dir/home/hzheng/workSpace/SketchLab/lib/TSP-NS/lib/ThreadPool/example.cpp.o"
+  "/home/tian/hzheng/TSP-NS/lib/ThreadPool/example.cpp" "/home/tian/hzheng/TSP-NS/example/build/CMakeFiles/threadpool.dir/home/tian/hzheng/TSP-NS/lib/ThreadPool/example.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

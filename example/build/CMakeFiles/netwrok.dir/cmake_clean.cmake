@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/netwrok.dir/home/hzheng/workSpace/SketchLab/lib/TSP-NS/network/src/IpAddress.cpp.o"
-  "CMakeFiles/netwrok.dir/home/hzheng/workSpace/SketchLab/lib/TSP-NS/network/src/Link.cpp.o"
-  "CMakeFiles/netwrok.dir/home/hzheng/workSpace/SketchLab/lib/TSP-NS/network/src/Node.cpp.o"
-  "CMakeFiles/netwrok.dir/home/hzheng/workSpace/SketchLab/lib/TSP-NS/network/src/Packet.cpp.o"
+  "CMakeFiles/netwrok.dir/home/tian/hzheng/TSP-NS/network/src/IpAddress.cpp.o"
+  "CMakeFiles/netwrok.dir/home/tian/hzheng/TSP-NS/network/src/Link.cpp.o"
+  "CMakeFiles/netwrok.dir/home/tian/hzheng/TSP-NS/network/src/Node.cpp.o"
+  "CMakeFiles/netwrok.dir/home/tian/hzheng/TSP-NS/network/src/Packet.cpp.o"
   "libnetwrok.pdb"
   "libnetwrok.a"
 )
