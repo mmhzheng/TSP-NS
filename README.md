@@ -1,6 +1,6 @@
-# TSP-NS : Time Slice based Parallized Network Simulator
+# TSP-NS : Time Slice based Parallelized Network Simulator
 
-This is a parallized discrete event simulator for network test. The implemented functions are very limited till now. But the core functions are all ready.
+This is a parallelized discrete event simulator for network test. The implemented functions are very limited till now. But the core functions are all ready.
 
 ## Structure
 ``` txt
