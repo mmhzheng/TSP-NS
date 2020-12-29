@@ -9,7 +9,7 @@
 #include <memory>
 
 
-namespace HSP_NS{
+namespace TSP_NS {
 
 class Packet;
 class Node;

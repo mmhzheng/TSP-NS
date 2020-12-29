@@ -5,7 +5,7 @@
 #include "IpAddress.h"
 
 
-namespace HSP_NS{
+namespace TSP_NS {
 
 //精简化的数据包
 class Packet{

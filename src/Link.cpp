@@ -1,7 +1,7 @@
 #include "Link.h"
 #include "Core.h"
 
-namespace HSP_NS{
+namespace TSP_NS {
 
     Link::Link( Time delay, UINT64_T dataRate )
         :_delay(delay), _sendRate(dataRate),

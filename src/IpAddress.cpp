@@ -2,7 +2,7 @@
 #include <arpa/inet.h>
 #include <string.h>
 
-namespace HSP_NS{
+namespace TSP_NS {
 
 Ipv4Address::Ipv4Address(const String& addrStr){
     _addr = inet_addr(addrStr.c_str());

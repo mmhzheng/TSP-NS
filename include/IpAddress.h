@@ -3,7 +3,7 @@
 
 #include "Common.h"
 
-namespace HSP_NS{
+namespace TSP_NS {
     
 class Ipv4Address{
 public:

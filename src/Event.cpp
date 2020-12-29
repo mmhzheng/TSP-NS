@@ -1,6 +1,6 @@
 #include "Event.h"
 
-namespace HSP_NS {
+namespace TSP_NS {
 
 	EventKey::EventKey(EVENT_ID event_id, NODE_ID node_id, Time timestamp, EVENT_STATUS status, const String& desc)
 		: _eventId(event_id),

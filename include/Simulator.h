@@ -9,7 +9,7 @@
 
 
 
-namespace HSP_NS {
+namespace TSP_NS {
 
 	class Simulator {
 	private:

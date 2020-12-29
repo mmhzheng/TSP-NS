@@ -4,7 +4,7 @@
 #include <ctime>
 using namespace std;
 
-namespace HSP_NS{
+namespace TSP_NS {
 
     SliceEvents::SliceEvents(UINT64_T id){
         _sliceId = 0;

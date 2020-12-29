@@ -16,7 +16,7 @@ using namespace std;
 using std::shared_ptr;
 
 
-namespace HSP_NS{
+namespace TSP_NS {
     
     class SliceEvents{
     public:

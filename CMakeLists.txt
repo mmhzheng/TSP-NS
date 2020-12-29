@@ -2,7 +2,7 @@ cmake_minimum_required( VERSION 2.8 )
 set (CMAKE_CXX_STANDARD 17)
 
 PROJECT(test_simple_topo)
-MESSAGE(STATUS "Project HSP-NS test_simple_topo")
+MESSAGE(STATUS "Project TSP-NS test_simple_topo")
 
 SET(CMAKE_BUILD_TYPE "Debug")
 SET(LOG "ON")        ## OFF

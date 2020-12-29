@@ -9,7 +9,7 @@ using std::shared_ptr;
 using std::make_shared;
 using std::pair;
 
-namespace HSP_NS {
+namespace TSP_NS {
 	
 	class EventKey{
 	public:

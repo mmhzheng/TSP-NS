@@ -3,10 +3,8 @@
 
 #include "Common.h"
 
-
-
-namespace HSP_NS {
-
+namespace TSP_NS {
+	
 	class Time {
 		private:
 			UINT64_T _timestamp;

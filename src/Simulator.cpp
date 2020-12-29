@@ -2,7 +2,7 @@
 #include <vector>
 #include <future>
 #include "ThreadPool.h"
-namespace HSP_NS{
+namespace TSP_NS {
 
 map<NODE_ID, Time> Simulator::_curTimes;
 std::atomic<int> exeCnt(0);

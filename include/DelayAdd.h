@@ -4,7 +4,7 @@
 #include "Time.h"
 #include <random>
 
-namespace HSP_NS{
+namespace TSP_NS {
 
 class AddDelay{
 public:

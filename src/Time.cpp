@@ -2,7 +2,7 @@
 #include <sstream>
 #include <iomanip>
 
-namespace HSP_NS{
+namespace TSP_NS {
 Time::Time(){
     _timestamp = 0;
 }

@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/hzheng/workSpace/SketchLab/lib/TSP-NS/build
 # Target rules for target CMakeFiles/test_example.dir
 
 # All Build rule for target.
-CMakeFiles/test_example.dir/all: CMakeFiles/skiplist.dir/all
 CMakeFiles/test_example.dir/all: CMakeFiles/threadpool.dir/all
+CMakeFiles/test_example.dir/all: CMakeFiles/skiplist.dir/all
 CMakeFiles/test_example.dir/all: CMakeFiles/TSP_NS.dir/all
 	$(MAKE) -f CMakeFiles/test_example.dir/build.make CMakeFiles/test_example.dir/depend
 	$(MAKE) -f CMakeFiles/test_example.dir/build.make CMakeFiles/test_example.dir/build

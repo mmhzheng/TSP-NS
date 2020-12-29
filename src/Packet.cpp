@@ -1,6 +1,6 @@
 #include "Packet.h"
 
-namespace HSP_NS{
+namespace TSP_NS {
     Packet::Packet(const String& srcAddr, const String& dstAddr, UINT32_T pktSize, const String& msg)
         : _ipv4Src(srcAddr), _ipv4Dst(dstAddr), _pktSize(pktSize), _msg(msg)
     {

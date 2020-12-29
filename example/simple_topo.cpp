@@ -3,7 +3,7 @@
 #include <memory>
 #include "Core.h"
 #include "Logger.h"
-using namespace HSP_NS;
+using namespace TSP_NS;
 using namespace std;
 using std::shared_ptr;
 
