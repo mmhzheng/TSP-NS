@@ -28,9 +28,9 @@ sudo ./setup.sh
 ```
 Now you can take a look at example/simple_topo.cpp and run it! You can check log file to see the running process.
 ```bash
-cd example
+cd bin
 ./auto_build.sh
-./test_simple_topo
+./test_example
 ```
 
 ## Reference Code

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTSP_NS.a  CMakeFiles/TSP_NS.dir/src/Event.cpp.o CMakeFiles/TSP_NS.dir/src/IpAddress.cpp.o CMakeFiles/TSP_NS.dir/src/Link.cpp.o CMakeFiles/TSP_NS.dir/src/MapEM.cpp.o CMakeFiles/TSP_NS.dir/src/Node.cpp.o CMakeFiles/TSP_NS.dir/src/Packet.cpp.o CMakeFiles/TSP_NS.dir/src/Simulator.cpp.o CMakeFiles/TSP_NS.dir/src/Time.cpp.o
+/usr/bin/ranlib libTSP_NS.a
