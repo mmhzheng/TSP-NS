@@ -21,10 +21,13 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../lib"
   "../lib/skiplist/include"
   "../lib/ThreadPool"
+  "/usr/local/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/hzheng/workSpace/SketchLab/lib/TSP-NS/build/CMakeFiles/skiplist.dir/DependInfo.cmake"
+  "/home/hzheng/workSpace/SketchLab/lib/TSP-NS/build/CMakeFiles/threadpool.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

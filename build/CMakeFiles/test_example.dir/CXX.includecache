@@ -69,14 +69,16 @@ Common.h
 ../include/Common.h
 
 ../include/MapEM.h
-sl_map.h
-../include/sl_map.h
-sl_set.h
-../include/sl_set.h
+skiplist/include/sl_map.h
+../include/skiplist/include/sl_map.h
+skiplist/include/sl_set.h
+../include/skiplist/include/sl_set.h
 Common.h
 ../include/Common.h
 Event.h
 ../include/Event.h
+Link.h
+../include/Link.h
 memory
 -
 thread

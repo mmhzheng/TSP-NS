@@ -1,12 +1,14 @@
 #include "Simulator.h"
+#include "Time.h"
 #include <vector>
 #include <future>
-#include "ThreadPool.h"
+#include "ThreadPool/ThreadPool.h"
 namespace TSP_NS {
 
 map<NODE_ID, Time> Simulator::_curTimes;
-std::atomic<int> exeCnt(0);
 
+
+std::atomic<int> exeCnt(0);
 EventManager& Simulator::_eventManager = EventManager::getEventManager();
 
 size_t getIndexND(size_t nd){
@@ -36,12 +38,12 @@ void Simulator::run(UINT32_T threadNum){
         WRITE_LOG(FATAL, "Thread num cannot lower than zero.");
         exit(-1);
     }
-
+    WRITE_LOG(DEBUG, "Finally slice size = %d ns", (int)EventManager::MIN_LINK_DELAY.getValue() / 1000);
     shared_ptr<SliceEvents> sliceEvents; 
     std::vector< std::future<void> > results;
     results.reserve(100);
-    int nodeStatis[4]=  {0};    //1, 2~6, 7~10, 11~, 
-    int evetStatis[4] = {0};    //0~10, 11 ~ 50, 51 ~ 100, 100~
+    // int nodeStatis[4]=  {0};    //1, 2~6, 7~10, 11~, 
+    // int evetStatis[4] = {0};    //0~10, 11 ~ 50, 51 ~ 100, 100~
     int count = 0;
     
     ThreadPool pool(threadNum);
@@ -49,11 +51,7 @@ void Simulator::run(UINT32_T threadNum){
         count ++ ;
         auto& events = sliceEvents->_sliceEvs;
         // cout << sliceEvents->getEventCount()<<endl;
-        UINT64_T evCnt = sliceEvents->getEventCount();
-	exeCnt += evCnt;
-        size_t ndCnt = events.size();
-        nodeStatis[getIndexND(ndCnt)]++;
-        evetStatis[getIndexEV(evCnt)]++;
+
         results.clear();
         for(auto it = events.begin(); it != events.end(); ++it){
             results.emplace_back(pool.enqueue(runOneNode,it->second));
@@ -61,28 +59,30 @@ void Simulator::run(UINT32_T threadNum){
         for(size_t i=0; i<results.size(); ++i){
             results[i].wait(); 
         }
+        UINT64_T evCnt = sliceEvents->getEventCount();
+	    exeCnt += evCnt;  // 得放后面
+        // size_t ndCnt = events.size();
+        // nodeStatis[getIndexND(ndCnt)]++;
+        // evetStatis[getIndexEV(evCnt)]++;
         if(count % 100000 == 0){
             pool.enqueue(gc);
         }
     }
-
-
     //输出统计结果
-    for(auto i=0; i<4; ++i){
-        cout << nodeStatis[i] << "    ";
-    }
-    cout << endl;
-    for(auto i=0; i<4; ++i){
-        cout << evetStatis[i] << "    ";
-    }
-    cout << endl;
-    cout <<"共计执行事件:"<<exeCnt.load()<<endl;
+    // for(auto i=0; i<4; ++i){
+    //     cout << nodeStatis[i] << "    ";
+    // }
+    // cout << endl;
+    // for(auto i=0; i<4; ++i){
+    //     cout << evetStatis[i] << "    ";
+    // }
+    // cout << endl;
+    cout <<"TSP-NS : Total Event Count : "<<exeCnt.load()<<endl;
 }
 
-
-void Simulator::setSliceSize(Time size){
-    _eventManager.setSliceSize(size);
-}
+// void Simulator::setSliceSize(Time size){
+//     _eventManager.setSliceSize(size);
+// }
 
 void Simulator::destroy(){
     WRITE_LOG(DEBUG, "Destroy the simulator");

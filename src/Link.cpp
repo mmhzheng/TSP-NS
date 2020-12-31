@@ -1,5 +1,6 @@
 #include "Link.h"
 #include "Core.h"
+#include "Simulator.h"
 
 namespace TSP_NS {
 
@@ -9,6 +10,11 @@ namespace TSP_NS {
          _nodeL(std::make_pair(nullptr, Device())),
          _nodeR(std::make_pair(nullptr, Device()))
     {
+        // Track Min Time Slice
+        if(_delay < EventManager::MIN_LINK_DELAY) // This is bigger //
+            EventManager::MIN_LINK_DELAY = _delay;
+        if(Simulator::getEventCount() > 0)
+            throw std::runtime_error("Do not setup links after insert an event!");
     }
 
     int Link::connect(std::shared_ptr<Node> node){

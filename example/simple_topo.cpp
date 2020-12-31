@@ -8,11 +8,9 @@ using namespace std;
 using std::shared_ptr;
 
 int main(int argc, char **argv){
-    // Init logger
-    Logger::initLogger("network_test", "./log");
-
     // Logger::shutdown();
     // add two nodes.
+    Logger::initLogger("network_test", "./log");
     shared_ptr<Node> n1 = make_shared<Node>(1);
     shared_ptr<Node> n2 = make_shared<Node>(2);
     // delay and bandwidth (1 ms, 1GB)

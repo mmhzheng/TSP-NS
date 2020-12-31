@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=test_simple_topo
+CMAKE_PROJECT_NAME:STATIC=TSP_NS
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -184,20 +184,20 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a library.
 G3LOG_LIBRARY_DEBUG:FILEPATH=G3LOG_LIBRARY_DEBUG-NOTFOUND
 
-//Dependencies for target
-TSP_NS_LIB_DEPENDS:STATIC=
+//Value Computed by CMake
+TSP_NS_BINARY_DIR:STATIC=/home/hzheng/workSpace/SketchLab/lib/TSP-NS/build
+
+//Dependencies for the target
+TSP_NS_LIB_DEPENDS:STATIC=general;skiplist;general;threadpool;general;pthread;general;g3logger;
+
+//Value Computed by CMake
+TSP_NS_SOURCE_DIR:STATIC=/home/hzheng/workSpace/SketchLab/lib/TSP-NS
 
 //The directory containing a CMake configuration file for g3logger.
 g3logger_DIR:PATH=/usr/local/lib/cmake/g3logger
 
 //Dependencies for target
 skiplist_LIB_DEPENDS:STATIC=
-
-//Value Computed by CMake
-test_simple_topo_BINARY_DIR:STATIC=/home/hzheng/workSpace/SketchLab/lib/TSP-NS/build
-
-//Value Computed by CMake
-test_simple_topo_SOURCE_DIR:STATIC=/home/hzheng/workSpace/SketchLab/lib/TSP-NS
 
 //Dependencies for target
 threadpool_LIB_DEPENDS:STATIC=

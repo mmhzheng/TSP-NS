@@ -13,7 +13,6 @@ namespace TSP_NS {
 
 	class Simulator {
 	private:
-		// static Time _curTime;
 		static map<NODE_ID, Time> _curTimes;
 		static EventManager& _eventManager;
 		static void runOneNode(shared_ptr<sl_map_gc<EventKey, shared_ptr<EventHandler>>> evList);
@@ -24,7 +23,7 @@ namespace TSP_NS {
 		static String getTimestamp(NODE_ID node, TIME_TYPE type);
 		static Time getTimestamp(NODE_ID node, Time delay);
 		static UINT64_T getEventCount();
-		static void setSliceSize(Time size);
+		// static void setSliceSize(Time size);
 
 		/**
 		* desc: 事件的描述

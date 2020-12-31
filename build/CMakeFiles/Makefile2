@@ -63,9 +63,9 @@ CMAKE_BINARY_DIR = /home/hzheng/workSpace/SketchLab/lib/TSP-NS/build
 # Target rules for target CMakeFiles/test_example.dir
 
 # All Build rule for target.
-CMakeFiles/test_example.dir/all: CMakeFiles/threadpool.dir/all
 CMakeFiles/test_example.dir/all: CMakeFiles/skiplist.dir/all
 CMakeFiles/test_example.dir/all: CMakeFiles/TSP_NS.dir/all
+CMakeFiles/test_example.dir/all: CMakeFiles/threadpool.dir/all
 	$(MAKE) -f CMakeFiles/test_example.dir/build.make CMakeFiles/test_example.dir/depend
 	$(MAKE) -f CMakeFiles/test_example.dir/build.make CMakeFiles/test_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hzheng/workSpace/SketchLab/lib/TSP-NS/build/CMakeFiles --progress-num=12,13 "Built target test_example"
@@ -102,7 +102,8 @@ clean: CMakeFiles/test_example.dir/clean
 # Target rules for target CMakeFiles/TSP_NS.dir
 
 # All Build rule for target.
-CMakeFiles/TSP_NS.dir/all:
+CMakeFiles/TSP_NS.dir/all: CMakeFiles/skiplist.dir/all
+CMakeFiles/TSP_NS.dir/all: CMakeFiles/threadpool.dir/all
 	$(MAKE) -f CMakeFiles/TSP_NS.dir/build.make CMakeFiles/TSP_NS.dir/depend
 	$(MAKE) -f CMakeFiles/TSP_NS.dir/build.make CMakeFiles/TSP_NS.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hzheng/workSpace/SketchLab/lib/TSP-NS/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target TSP_NS"
@@ -115,7 +116,7 @@ all: CMakeFiles/TSP_NS.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TSP_NS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hzheng/workSpace/SketchLab/lib/TSP-NS/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hzheng/workSpace/SketchLab/lib/TSP-NS/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TSP_NS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hzheng/workSpace/SketchLab/lib/TSP-NS/build/CMakeFiles 0
 .PHONY : CMakeFiles/TSP_NS.dir/rule

@@ -28,5 +28,4 @@ enum TIME_TYPE {Second, MilliSecond, MicroSecond, NanoSecond, BaseTime};
 #define SLICES_PER_MICROS 1000000
 #define SLICES_PER_NANOSE 1000
 
-
 #endif

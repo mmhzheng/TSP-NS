@@ -19,6 +19,8 @@ namespace TSP_NS {
 			bool operator<(const Time& time2)const;
 			bool operator>(const Time& time2)const;
 			Time operator+(const Time& time2)const;
+			Time operator*(int mut)const;
+			Time operator/(int mut)const;
 			UINT64_T operator/(const Time& time2)const;
 	};
 }

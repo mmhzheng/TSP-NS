@@ -47,6 +47,12 @@ bool Time::operator>(const Time& time2)const{
 Time Time::operator+(const Time& time2)const{
     return Time(BaseTime, _timestamp + time2._timestamp);
 }
+Time Time::operator*(int mut)const {
+    return Time(BaseTime, _timestamp * mut);
+}
+Time Time::operator/(int mut)const {
+    return Time(BaseTime, _timestamp / (UINT64_T)mut);
+}
 UINT64_T Time::operator/(const Time& time2)const{
     return _timestamp / time2._timestamp;
 }

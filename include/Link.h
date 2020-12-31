@@ -71,9 +71,6 @@ private:
     std::pair<shared_ptr<Node>, Device> _nodeL;
     std::pair<shared_ptr<Node>, Device> _nodeR;
 };
-
-
-
 }
 
 #endif 
