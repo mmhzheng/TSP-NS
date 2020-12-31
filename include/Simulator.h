@@ -51,11 +51,11 @@ namespace TSP_NS {
 		// checkAndInsert(nodeId);
 	    Event newEv =  EventMaker::make_event(nodeId,  time, desc ,mem_ptr, obj);
 	    _eventManager.insertEvent(newEv);
-		WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
-			(newEv.first).getTimestamp().toString(Second).c_str(), 
-			(newEv.first).getNodeId(),
-			(newEv.first).getEventId(),
-			(newEv.first).getDescription().c_str());
+		// WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
+		// 	(newEv.first).getTimestamp().toString(Second).c_str(), 
+		// 	(newEv.first).getNodeId(),
+		// 	(newEv.first).getEventId(),
+		// 	(newEv.first).getDescription().c_str());
 	}
 	template <typename MEM, typename OBJ, 
 				typename T1>
@@ -65,11 +65,11 @@ namespace TSP_NS {
 		// checkAndInsert(nodeId);		
 	    Event newEv =  EventMaker::make_event(nodeId,  time, desc ,mem_ptr, obj, arg1);
 	    _eventManager.insertEvent(newEv);
-		WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
-			(newEv.first).getTimestamp().toString(Second).c_str(), 
-			(newEv.first).getNodeId(),
-			(newEv.first).getEventId(),
-			(newEv.first).getDescription().c_str());
+		// WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
+		// 	(newEv.first).getTimestamp().toString(Second).c_str(), 
+		// 	(newEv.first).getNodeId(),
+		// 	(newEv.first).getEventId(),
+		// 	(newEv.first).getDescription().c_str());
 	}
 	template <typename MEM, typename OBJ, 
 			  typename T1, typename T2>
@@ -79,11 +79,11 @@ namespace TSP_NS {
 		// checkAndInsert(nodeId);		
 	    Event newEv =  EventMaker::make_event(nodeId,  time, desc ,mem_ptr, obj, arg1, arg2);
 	    _eventManager.insertEvent(newEv);
-		WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
-			(newEv.first).getTimestamp().toString(Second).c_str(), 
-			(newEv.first).getNodeId(),
-			(newEv.first).getEventId(),
-			(newEv.first).getDescription().c_str());
+		// WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
+		// 	(newEv.first).getTimestamp().toString(Second).c_str(), 
+		// 	(newEv.first).getNodeId(),
+		// 	(newEv.first).getEventId(),
+		// 	(newEv.first).getDescription().c_str());
 	}
 	template <typename MEM, typename OBJ, 
 			  typename T1, typename T2, typename T3>
@@ -93,11 +93,11 @@ namespace TSP_NS {
 		// checkAndInsert(nodeId);
 	    Event newEv =  EventMaker::make_event(nodeId,  time, desc ,mem_ptr, obj, arg1, arg2, arg3);
 	    _eventManager.insertEvent(newEv);
-		WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
-			(newEv.first).getTimestamp().toString(Second).c_str(),  
-			(newEv.first).getNodeId(),
-			(newEv.first).getEventId(),
-			(newEv.first).getDescription().c_str());
+		// WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
+		// 	(newEv.first).getTimestamp().toString(Second).c_str(),  
+		// 	(newEv.first).getNodeId(),
+		// 	(newEv.first).getEventId(),
+		// 	(newEv.first).getDescription().c_str());
 		return;
 	}
 	template <typename MEM, typename OBJ, 
@@ -108,11 +108,11 @@ namespace TSP_NS {
 		// checkAndInsert(nodeId);
 	    Event newEv =  EventMaker::make_event(nodeId,  time, desc ,mem_ptr, obj, arg1, arg2, arg3, arg4);
 	    _eventManager.insertEvent(newEv);
-		WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
-			(newEv.first).getTimestamp().toString(Second).c_str(), 
-			(newEv.first).getNodeId(),
-			(newEv.first).getEventId(),
-			(newEv.first).getDescription().c_str());
+		// WRITE_LOG(DEBUG, "[%ss] Insert event, node=%u, event_id=%llu, description: %s", 
+		// 	(newEv.first).getTimestamp().toString(Second).c_str(), 
+		// 	(newEv.first).getNodeId(),
+		// 	(newEv.first).getEventId(),
+		// 	(newEv.first).getDescription().c_str());
 	}
 }
 #endif

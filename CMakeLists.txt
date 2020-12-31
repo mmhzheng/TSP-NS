@@ -5,7 +5,7 @@ PROJECT(TSP_NS)
 MESSAGE(STATUS "Project TSP-NS")
 
 SET(CMAKE_BUILD_TYPE "Debug")
-SET(LOG "ON")        ## OFF
+SET(LOG "OFF")        ## OFF
 
 SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O2 -Wall -g2 -ggdb")
 

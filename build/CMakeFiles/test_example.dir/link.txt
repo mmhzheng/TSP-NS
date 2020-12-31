@@ -1,1 +1,1 @@
-/usr/bin/c++   -O2 -Wall -g2 -ggdb  -rdynamic CMakeFiles/test_example.dir/example/simple_topo.cpp.o  -o ../bin/test_example -Wl,-rpath,/usr/local/lib libTSP_NS.a libskiplist.a libthreadpool.a -lpthread /usr/local/lib/libg3logger.so.1.3.2-122 -lpthread 
+/usr/bin/c++   -O2 -Wall -g2 -ggdb -D _NO_LOG_  -rdynamic CMakeFiles/test_example.dir/example/simple_topo.cpp.o  -o ../bin/test_example -Wl,-rpath,/usr/local/lib libTSP_NS.a libskiplist.a libthreadpool.a -lpthread /usr/local/lib/libg3logger.so.1.3.2-122 -lpthread 
