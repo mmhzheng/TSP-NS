@@ -1,5 +1,7 @@
 #include "Packet.h"
-
+#include <cstring>
+#include <iostream>
+using namespace std;
 namespace TSP_NS {
     Packet::Packet(const String& srcAddr, const String& dstAddr, UINT32_T pktSize, const String& msg)
         : _ipv4Src(srcAddr), _ipv4Dst(dstAddr), _pktSize(pktSize), _msg(msg)
@@ -11,6 +13,14 @@ namespace TSP_NS {
     {
 
     }
+    Packet::Packet(const char* five_tuple)
+        : _ipv4Src((const uint8_t *)five_tuple, 4), _ipv4Dst((const uint8_t *)five_tuple + 4 + 2, 4)
+    {
+        memcpy(_sport, five_tuple + 4, 2);
+        memcpy(_dport, five_tuple + 4 + 2 + 4, 2);
+        memcpy(_protocol, five_tuple + 4 + 2 + 4 + 2, 1);
+    }
+
     Ipv4Address Packet::getDstIpAddr()const{
         return _ipv4Dst;
     }
@@ -18,6 +28,12 @@ namespace TSP_NS {
         return _ipv4Src;
     }
 
+    const uint8_t* Packet::getDstIpAddrBytes()const{
+        return _ipv4Dst.getAddrBytes();
+    }
+    const uint8_t* Packet::getSrcIpAddrBytes()const{
+        return _ipv4Src.getAddrBytes();
+    }
     String Packet::getDstIpAddrStr()const{
         return _ipv4Dst.getAddrStr();
     }

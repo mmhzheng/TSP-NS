@@ -56,12 +56,12 @@ namespace TSP_NS {
     }
 
     int Node::receive(shared_ptr<Link> fromLink, shared_ptr<Packet> pktRecv){    
-        WRITE_LOG(INFO, "[%ss] NodeId=%u(%s), Receive a packet from %s, msg(%s).",
-                    Simulator::getTimestamp(getNodeId() ,Second).c_str(),
-                    _nodeId,
-                    pktRecv->getDstIpAddrStr().c_str(),
-                    pktRecv->getSrcIpAddrStr().c_str(),
-                    pktRecv->getMessage().c_str());       
+        // WRITE_LOG(INFO, "[%ss] NodeId=%u(%s), Receive a packet from %s, msg(%s).",
+        //             Simulator::getTimestamp(getNodeId() ,Second).c_str(),
+        //             _nodeId,
+        //             pktRecv->getDstIpAddrStr().c_str(),
+        //             pktRecv->getSrcIpAddrStr().c_str(),
+        //             pktRecv->getMessage().c_str());       
         return 0;
     }
 

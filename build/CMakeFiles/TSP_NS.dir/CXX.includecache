@@ -197,6 +197,10 @@ arpa/inet.h
 -
 string.h
 -
+iostream
+-
+string
+-
 
 /home/hzheng/workSpace/SketchLab/lib/TSP-NS/src/Link.cpp
 Link.h
@@ -227,6 +231,10 @@ Core.h
 /home/hzheng/workSpace/SketchLab/lib/TSP-NS/src/Packet.cpp
 Packet.h
 /home/hzheng/workSpace/SketchLab/lib/TSP-NS/src/Packet.h
+cstring
+-
+iostream
+-
 
 /home/hzheng/workSpace/SketchLab/lib/TSP-NS/src/Simulator.cpp
 Simulator.h
